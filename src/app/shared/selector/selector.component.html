@@ -1,0 +1,54 @@
+<!-- <div>Hello angular</div>
+<select>
+  <option *ngFor="let currency of response | keyvalue" [value]="currency.key">
+    <img
+      [src]="'https://currencyfreaks.com/photos/flags/'+ (currency.key | lowercase) +'.png'"
+      [alt]="'Hi'"
+    />
+    {{ currency.key }}
+  </option>
+</select>
+
+<div *ngFor="let currency of response | keyvalue " >
+  <img
+  [src]="'https://currencyfreaks.com/photos/flags/'+ (currency.key | lowercase) +'.png'"
+  [alt]="'Hi'"
+/> -->
+
+<!-- <p-treeSelect class="md:w-20rem w-full" containerStyleClass="w-full"
+[(ngModel)]="selectedNodes"
+[options]="nodes"
+ placeholder="Select Item">
+</p-treeSelect> -->
+<!-- <p-treeSelect (ngModelChange)="getLog()"
+  class="md:w-20rem w-full"
+  containerStyleClass="w-full"
+  [(ngModel)]="selectedNodes"
+  [options]="nodes"
+  placeholder="Select Item"
+>
+  <ng-template let-node pTemplate="default">
+    <div class="custom-tree-node">
+      <img [src]="node.flagUrl" class="flag-image" alt="Flag" />
+      <span>{{ node.label }}</span>
+    </div>
+  </ng-template>
+</p-treeSelect>
+<div>{{selectedNodes}} Hellllllllllllllllllllo</div> -->
+<div class="custom-dropdown">
+  <button class="dropdown-button" (click)="toggleDropdown()">
+    <img *ngIf="selectedCurrency" [src]="'https://currencyfreaks.com/photos/flags/'+ selectedCurrency.toLowerCase() +'.png'"
+    class="flag-image"
+    alt="Flag" />
+    {{ selectedCurrency ? selectedCurrency : 'Select Currency' }}
+    <span class="dropdown-arrow" [ngClass]="{ 'rotate': isDropdownOpen }">&#9662;</span>
+  </button>
+
+  <ul class="dropdown-list" *ngIf="isDropdownOpen">
+    <li *ngFor="let currency of response | keyvalue" (click)="selectCurrency(currency.key)" >
+      <img [src]="'https://currencyfreaks.com/photos/flags/'+ currency.key.toLowerCase() +'.png'" class="flag-image" alt="Flag" />
+      {{ currency.key }}
+    </li>
+    <li class="dropdown-list" *ngIf="!response">currency not found</li>
+  </ul>
+</div>
