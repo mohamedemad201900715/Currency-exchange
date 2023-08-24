@@ -1,0 +1,18 @@
+<toggle-btns
+  [toggleData]="toggleData"
+  (setActive$)="activeTab = $event"
+></toggle-btns>
+<div class="from">
+  <app-input></app-input>
+
+  <!-- input -->
+  <label for="From"></label>
+  <app-selector></app-selector>
+</div>
+<div class="to">
+  <label for="To"></label>
+  <app-selector></app-selector>
+  <label for="Amount"></label>
+  <!-- input -->
+</div>
+<app-btn></app-btn>

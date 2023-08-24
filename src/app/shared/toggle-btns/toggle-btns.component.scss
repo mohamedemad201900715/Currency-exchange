@@ -1,0 +1,10 @@
+:host {
+  @apply flex w-[552.519px] h-[95.23px] p-[17.661px] justify-center items-center gap-[17.661px] rounded-[39.778px] bg-[#F0F0F0];
+}
+
+.toggle-btn {
+  @apply flex w-[239.088px]  h-[81.047px]  p-[16.113px] justify-center items-center gap-[16.113px] rounded-[36.292px] bg-[transparent] transition-all;
+}
+.toggle-btn_active {
+  @apply bg-white;
+}

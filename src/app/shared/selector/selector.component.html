@@ -1,0 +1,17 @@
+<div class="custom-dropdown">
+  <button class="dropdown-button" (click)="toggleDropdown()">
+    <img *ngIf="selectedCurrency" [src]="'https://currencyfreaks.com/photos/flags/'+ selectedCurrency.toLowerCase() +'.png'"
+    class="flag-image"
+    alt="Flag" />
+    {{ selectedCurrency ? selectedCurrency : 'Select Currency' }}
+    <span class="dropdown-arrow" [ngClass]="{ 'rotate': isDropdownOpen }">&#9662;</span>
+  </button>
+
+  <ul class="dropdown-list" *ngIf="isDropdownOpen">
+    <li *ngFor="let currency of response | keyvalue" (click)="selectCurrency(currency.key)" >
+      <img [src]="'https://currencyfreaks.com/photos/flags/'+ currency.key.toLowerCase() +'.png'" class="flag-image" alt="Flag" />
+      {{ currency.key }}
+    </li>
+    <li class="dropdown-list" *ngIf="!response">currency not found</li>
+  </ul>
+</div>
