@@ -10,6 +10,7 @@ import { CompareComponent } from './components/compare/compare.component';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToggleBtnsComponent } from './shared/toggle-btns/toggle-btns.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SelectorComponent,
     ConvertComponent,
     CompareComponent,
+    ToggleBtnsComponent,
   ],
   imports: [
     BrowserModule,
