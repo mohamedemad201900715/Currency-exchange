@@ -1,4 +1,4 @@
-import { NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,12 +8,11 @@ import { SelectorComponent } from './shared/selector/selector.component';
 import { ConvertComponent } from './components/convert/convert.component';
 import { CompareComponent } from './components/compare/compare.component';
 import { TreeSelectModule } from 'primeng/treeselect';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToggleBtnsComponent } from './shared/toggle-btns/toggle-btns.component';
 import { BtnComponent } from './shared/btn/btn.component';
 import { InputComponent } from './shared/input/input.component';
-
 
 @NgModule({
   declarations: [
@@ -32,9 +31,10 @@ import { InputComponent } from './shared/input/input.component';
     CommonModule,
     TreeSelectModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
