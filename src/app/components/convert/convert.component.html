@@ -1,19 +1,26 @@
-
 <toggle-btns
   [toggleData]="toggleData"
   (setActive$)="activeTab = $event"
 ></toggle-btns>
-<div class="from">
-  <!-- <label for="Amount"></label> -->
-  <app-input></app-input>
-  <!-- input -->
-  <label for="From"></label>
-<app-selector></app-selector>
+<div class="from-currency">
+  <div class="amount-input">
+    <label for="Amount">Amount</label>
+    <app-input></app-input>
+  </div>
+  <div class="from">
+    <label  for="From">from</label>
+    <app-selector></app-selector>
+  </div>
 </div>
-<div class="to">
-  <label for="To"></label>
-  <app-selector></app-selector>
-  <label for="Amount"></label>
+<div class="to-currency">
+  <div class="to">
+    <label for="To">To</label>
+    <app-selector></app-selector>
+  </div>
+  <div class="amount-output">
+    <label for="Amount">Amount</label>
+    <app-input></app-input>
+  </div>
   <!-- input -->
 </div>
 <app-btn></app-btn>

@@ -1,14 +1,19 @@
 .amount {
-    font-size: 30px;
-    color: white;
-  }
-  .input-filed input {
-    border-radius: 35.238px;
-    border: 0.881px solid #c5c5c5;
-    background: #f9f9f9;
-    height: 84.571px;
-    flex-shrink: 0;
-    font-size: 38px;
-    font-family: Open Sans;
-  }
-  
+  font-size: 25px;
+  color: white;
+}
+.input-filed input {
+  border-radius: 18px;
+  border: 0.881px solid #c5c5c5;
+  background: #f9f9f9;
+  // height: 84.571px;
+  flex-shrink: 0;
+  font-weight: 600;
+  // font-size: 20px;
+  font-family: Open Sans;
+  width: 9.5rem;
+  // padding: 5px;
+  padding-top: 12px;
+padding-bottom: 12px;
+  padding-left: 12px;
+}

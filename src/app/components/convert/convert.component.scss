@@ -1,10 +1,43 @@
-:host{
-display: flex;
-flex-direction: column;
-width: 783px;
-height: 768.308px;
-flex-shrink: 0;
-border-radius: 21.314px;
-background: linear-gradient(134deg, rgba(0, 0, 0, 0.40) 0%, rgba(157, 157, 157, 0.20) 100%);
-backdrop-filter: blur(5.264404296875px);
+:host {
+  display: flex;
+  flex-direction: column;
+  // width: 783px;
+  height: fit-content;
+  flex-shrink: 0;
+  border-radius: 21.314px;
+  background: linear-gradient(
+    134deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(157, 157, 157, 0.2) 100%
+  );
+  backdrop-filter: blur(5.264404296875px);
+  //   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+// .from-currency{
+//     display: flex;
+// }
+label {
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+.from-currency {
+  display: flex;
+  margin-top: 15px;
+  //   margin-bottom: 0px;
+  justify-content: space-between;
+}
+// .from-currency .amount-input {
+//     margin-top: 10px;
+
+//   }
+.to-currency {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
