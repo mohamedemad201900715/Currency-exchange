@@ -4,23 +4,6 @@
   padding: 0;
   background-color: rgb(232, 232, 232);
 }
-// .ground {
-//   background-image: url(../assets/images/1.jpeg);
-//   width: 100vw;
-//   height: 26vh;
-//   border-radius: 3px;
-// }
-// .filter {
-//   width: 100vw;
-//   height: 25vh;
-//   backdrop-filter: blur(4px);
-//   border-radius: 2px;
-// }
-// nav {
-//   display: flex;
-//   justify-content: left;
-//   color: rgb(253, 248, 248);
-// }
 
 h1 {
   margin-top: 5%;
@@ -44,10 +27,8 @@ h3 {
 .main-container {
   padding-top: 40px;
   height: 100%;
-  // padding-bottom: 60px;
   padding-left: 150px;
   padding-right: 150px;
-  // background-color: rgb(232, 232, 232);
 }
 .head {
   color: rgb(0, 0, 0);
@@ -57,8 +38,6 @@ h3 {
 
 .artical {
   display: flex;
-  // justify-content: space-between;
-  //   margin-left: 1%;
   margin-top: 4.5%;
   position: relative;
 }
