@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
-import { ApiDataService } from '../../Services/api-data.service';
-import { ToggleStaticsData, ToggleStaticsData1 } from '../../static/data.static';
+import { Component, Input } from '@angular/core';
+import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
 @Component({
   selector: 'app-convert',
   templateUrl: './convert.component.html',
   styleUrls: ['./convert.component.scss']
 })
 export class ConvertComponent {
-  toggleData = ToggleStaticsData;
-  toggleData1 = ToggleStaticsData1;
-  activeTab = ToggleStaticsData[0].status;
+btnName:string ="convert"
+@Input() flagurl:string= "";
+@Input() response?:conversionRates
+counryselect(curr:string){
+  console.log("my counry is " + curr)
+}
 }

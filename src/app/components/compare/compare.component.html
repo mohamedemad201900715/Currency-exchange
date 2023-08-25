@@ -1,1 +1,35 @@
-<p>compare works!</p>
+
+<div class="from-currency">
+  <div class="amount-input">
+    <label for="Amount">Amount</label>
+    <div class ="input"><app-input ></app-input></div>
+  </div>
+  <div class="from">
+    <label  for="From">from</label>
+    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response"></app-selector></div>
+  </div>
+</div>
+<div class="to-currency">
+  <div class="to">
+    <label for="To">Targeted currancy</label>
+    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response"></app-selector></div>
+  </div>
+  <div class="amount-output">
+    <label for="Amount">Targeted currancy</label>
+    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response"></app-selector></div>
+  </div>
+
+  <!-- input -->
+</div>
+<div class="to-currency">
+  <div class="to">
+    <div class ="input"><app-input></app-input></div>
+  </div>
+  <div class="amount-output">
+    <div class ="input"><app-input></app-input></div>
+  </div>
+
+  <!-- input -->
+</div>
+<app-btn [title]="btnName"></app-btn>
+

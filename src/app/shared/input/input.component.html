@@ -1,6 +1,6 @@
 <!-- <label class="amount">Amount</label> -->
 <div class="input-filed">
-  <input class="layout" type="number" placeholder="Value" [formControl]="inputControl" />
+  <input class="layout" type="text" placeholder="Value" [formControl]="inputControl" appPreventNegativeInput />
 </div>
 <!-- <div>{{ inputControl.value }}
     {{ outAmount }}

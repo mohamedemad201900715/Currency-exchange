@@ -1,5 +1,11 @@
-<app-convert></app-convert>
-
+<div class="taps">
+<toggle-btns
+  [toggleData]="toggleData"
+  (setActive$)="activeTab = $event"
+></toggle-btns>
+<app-convert [flagurl]="flagurl" [response]="response" *ngIf="activeTab === 'convert'"></app-convert>
+<app-compare [flagurl]="flagurl" [response]="response" *ngIf="activeTab === 'compare'"></app-compare>
+</div>
 
 
  <!-- <app-btn></app-btn> -->

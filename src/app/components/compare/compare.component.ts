@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
 
 @Component({
   selector: 'app-compare',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./compare.component.scss']
 })
 export class CompareComponent {
+  btnName:string ="compare"
+  @Input() flagurl:string= "";
+@Input() response?:conversionRates
 
 }
