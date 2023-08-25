@@ -42,7 +42,8 @@ h3 {
 }
 .main-container {
   padding-top: 40px;
-  height: 100%;
+  min-height: 100%;
+  height: fit-content;
   // padding-bottom: 60px;
   padding-left: 150px;
   padding-right: 150px;
