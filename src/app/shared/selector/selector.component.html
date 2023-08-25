@@ -9,7 +9,7 @@
 
   <ul class="dropdown-list" *ngIf="isDropdownOpen">
     <li *ngFor="let currency of response | keyvalue" (click)="selectCurrency(currency.key)" >
-      <img [src]="flagurl+ currency.key.toLowerCase() +'.png'" class="flag-image" alt="Flag" />
+      <img [src]="flagurl + currency.key.toLowerCase() +'.png'" class="flag-image" alt="Flag" />
       {{ currency.key }}
     </li>
     <li class="dropdown-list" *ngIf="!response">currency not found</li>

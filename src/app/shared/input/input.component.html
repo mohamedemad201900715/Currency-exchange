@@ -1,6 +1,7 @@
 <!-- <label class="amount">Amount</label> -->
 <div class="input-filed">
-  <input class="layout" type="text" placeholder="Value" [formControl]="inputControl" appPreventNegativeInput />
+  <input *ngIf="!isdisable" class="layout"  type="text"  placeholder="Value" [formControl]="inputControl" appPreventNegativeInput />
+  <input *ngIf="isdisable" class="layout"  type="text" [disabled]="isdisable"  />
 </div>
 <!-- <div>{{ inputControl.value }}
     {{ outAmount }}

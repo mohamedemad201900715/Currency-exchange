@@ -10,6 +10,6 @@ export class ApiDataService {
   constructor(private http:HttpClient) { }
 
   public getProducts(){
-  return this.http.get<ExchangeRateResponse>('https://v6.exchangerate-api.com/v6/ecf10bab01b34bf0de9636e1/latest/USD');
+  return this.http.get<ExchangeRateResponse>('https://currencyexchange-wbtr.onrender.com/latest/USD');
 }
 }

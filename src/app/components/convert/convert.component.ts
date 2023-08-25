@@ -6,7 +6,8 @@ import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
   styleUrls: ['./convert.component.scss']
 })
 export class ConvertComponent {
-btnName:string ="convert"
+  isdisable:boolean = true;
+  btnName:string ="convert"
 @Input() flagurl:string= "";
 @Input() response?:conversionRates
 counryselect(curr:string){

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Directive, HostListener } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { Directive, HostListener } from '@angular/core';
 })
 export class InputComponent {
   inputControl:FormControl = new FormControl(null);
-
+  @Input() isdisable:boolean= false
   outAmount:number = 0;
   @HostListener('input', ['$event'])
   onInput(event: Event) {
