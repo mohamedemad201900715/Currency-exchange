@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+<div class="background">
+  <nav><img src="../assets/final 1.png" alt=""></nav>
+<div class="page-1">
 <div class="taps">
 <toggle-btns
   [toggleData]="toggleData"
@@ -7,5 +9,9 @@
 <app-convert [flagurl]="flagurl" [response]="response" *ngIf="activeTab === 'convert'"></app-convert>
 <app-compare [flagurl]="flagurl" [response]="response" *ngIf="activeTab === 'compare'"></app-compare>
 </div>
-
-
+</div>
+</div>
+<div class="page-2">
+<app-favourite [flagurl]="flagurl" [response]="response"></app-favourite>
+</div>
+<!-- <app-flag-list></app-flag-list> -->

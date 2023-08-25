@@ -14,6 +14,7 @@ import { ToggleBtnsComponent } from './shared/toggle-btns/toggle-btns.component'
 import { BtnComponent } from './shared/btn/btn.component';
 import { InputComponent } from './shared/input/input.component';
 import { FavouriteComponent } from './components/favourite/favourite.component';
+import { FlagListComponent } from './shared/flag-list/flag-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FavouriteComponent } from './components/favourite/favourite.component';
     BtnComponent,
     InputComponent,
     FavouriteComponent,
+    FlagListComponent,
   ],
   imports: [
     BrowserModule,

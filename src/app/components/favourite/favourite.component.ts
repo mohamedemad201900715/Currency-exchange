@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
 
 @Component({
   selector: 'app-favourite',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./favourite.component.scss']
 })
 export class FavouriteComponent {
-
+  @Input() flagurl:string="";
+  @Input() response?:conversionRates;
 }
 

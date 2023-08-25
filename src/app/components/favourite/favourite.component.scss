@@ -27,45 +27,39 @@ h1 {
   font-size: 40px;
 }
 h2 {
-  font-family: sans-serif;
   font-size: 200%;
 }
-
+h3{
+ font-size: 150%;
+ color: rgb(93, 95, 97);
+}
+.name-currancy{
+  color: rgb(140, 136, 136);
+}
+.currancy{
+  color: black;
+}
 .main-container {
-  height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 60px;
   padding-right: 60px;
-  // gap:20px;
+    background-color: rgb(232,232,232);
+
 }
 .head {
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
 }
-.head button {
-  border: 1px solid rgb(121, 121, 121);
-  border-radius: 50px;
-//   padding: 5px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.head button img {
-width: 30px;
-padding: 5px;
-  }
+
+
 .artical {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  gap: 30%;
 //   margin-left: 1%;
   margin-top: 7%;
-  height: 400px;
+  position: relative;
 }
 #minicont {
   display: flex;
@@ -74,8 +68,6 @@ padding: 5px;
   justify-content: left;
   margin-left: 1%;
   margin-top: 15%;
-  height: 21%;
-  width: 240%;
   border: 0px solid rgb(183, 179, 179);
 }
 
@@ -88,4 +80,11 @@ padding: 5px;
 .num {
   margin-left: 42%;
   font-size: 27px;
+}
+.left{
+  width: 100%;
+}
+.miniconts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
