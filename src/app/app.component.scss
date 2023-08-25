@@ -1,11 +1,15 @@
-:host{
-  // height: 100vh;
 
+.convert{
+  // height: 100vh;
+// width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: url("../assets/glowing-chart-shows-successful-financial-growth-generated-by-ai\ 1.png");
   background-size: cover;
+}
+.favourite{
+  // width: 100vw;
 }
 
