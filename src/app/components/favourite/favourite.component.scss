@@ -2,6 +2,7 @@
   //   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(232, 232, 232);
 }
 // .ground {
 //   background-image: url(../assets/images/1.jpeg);
@@ -31,7 +32,7 @@ h2 {
 }
 h3 {
   font-size: 150%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
 }
 .name-currancy {
@@ -42,12 +43,11 @@ h3 {
 }
 .main-container {
   padding-top: 40px;
-  min-height: 100%;
-  height: fit-content;
+  height: 100%;
   // padding-bottom: 60px;
   padding-left: 150px;
   padding-right: 150px;
-  background-color: rgb(232, 232, 232);
+  // background-color: rgb(232, 232, 232);
 }
 .head {
   color: rgb(0, 0, 0);
@@ -74,6 +74,9 @@ h3 {
   // border: hight 15px;
   width: 80%;
 }
+.miniconts .flag img {
+  width: 75%;
+}
 
 .flex-colum {
   display: flex;
@@ -90,5 +93,5 @@ h3 {
 }
 .miniconts {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
