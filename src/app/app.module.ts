@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToggleBtnsComponent } from './shared/toggle-btns/toggle-btns.component';
 import { BtnComponent } from './shared/btn/btn.component';
 import { InputComponent } from './shared/input/input.component';
+import { FavouriteComponent } from './components/favourite/favourite.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InputComponent } from './shared/input/input.component';
     ToggleBtnsComponent,
     BtnComponent,
     InputComponent,
+    FavouriteComponent,
   ],
   imports: [
     BrowserModule,
