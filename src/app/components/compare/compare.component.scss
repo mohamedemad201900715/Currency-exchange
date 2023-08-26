@@ -26,22 +26,30 @@ label {
   margin-bottom: 40px;
   justify-content: space-around;
 }
+
+
 @media screen and (max-width: 600px) {
   * {
     color: black;
   }
+  .compare{
+    width: 100vw;
+    padding-left: 10px;
+    
+
+  }
   .input {
     width: 152px;
     height: 48px;
+    
   }
-  .select {
-    // width: 90px;
-    // height: 48px;
-  }
+ 
   .to-currency {
     margin: 0px;
     padding: 0px;
     margin-bottom: 18px;
+    padding-left: 30px;
+
     // padding-left: 30px;
 
 
@@ -53,10 +61,16 @@ label {
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 0px;
+    padding-left: 30px;
   }
   label{
     color: black;
     font-weight: 600;
     font-size: 14px;
+  }
+  app-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
   }
 }

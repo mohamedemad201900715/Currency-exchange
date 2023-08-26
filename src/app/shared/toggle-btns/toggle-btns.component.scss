@@ -1,5 +1,5 @@
 :host {
-  @apply flex  w-[25rem]   h-[68px] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0] ;
+  @apply flex  w-[25rem]   h-[68px] sm:w-[2] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0] ;
 }
 
 .toggle-btn {
