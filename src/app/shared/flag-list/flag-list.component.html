@@ -15,11 +15,11 @@
 
   </div>
 </div>
-  <input type="checkbox" id="checkBox" class="styled-checkbox"/>
+  <input type="checkbox" id="checkBox" class="styled-checkbox" [checked]="checkedCurrencies.includes(currency.key)"
+  (change)="checkboxChanged($event, currency.key , currency.value)" />
   </div>
   </div>
 </div>
 </div>
 <div *ngIf="isListOpen" class="page-overlay" (click)="closeDropdown()"></div>
-  <!-- <img src="https://currencyfreaks.com/photos/flags/pkr.png" alt="Flag of Country"> -->
 

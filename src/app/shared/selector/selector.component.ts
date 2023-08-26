@@ -16,17 +16,7 @@ export class SelectorComponent {
 
   isDropdownOpen = false;
   @Output()selecteddCurrency = new EventEmitter
-  selectedCurrency?:string;
-  // response!: conversionRates;
-  // constructor(private service: ApiDataService){}
-
-  //   ngOnInit():void{
-  //     this.service.getProducts().subscribe((response) => {
-  //       this.response = response.conversion_rates as conversionRates ;
-  //       console.log(this.response);
-  //     });
-
-  //  }
+  selectedCurrency:string="";
 toggleDropdown() {
   this.isDropdownOpen = !this.isDropdownOpen;
 }

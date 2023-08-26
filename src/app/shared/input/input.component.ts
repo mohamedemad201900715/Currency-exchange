@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Directive, HostListener } from '@angular/core';
 
@@ -10,7 +10,9 @@ import { Directive, HostListener } from '@angular/core';
 export class InputComponent {
   inputControl:FormControl = new FormControl(null);
   @Input() isdisable:boolean= false
-  outAmount:number = 0;
+  @Input() outAmount:number = 0;
+  @Input() Result?:number;
+  @Output() Amount: EventEmitter<number> = new EventEmitter<number>();
   @HostListener('input', ['$event'])
   onInput(event: Event) {
     const inputElement = event.target as HTMLInputElement;
@@ -20,8 +22,9 @@ export class InputComponent {
   constructor() {
     // console.log(this.inputControl.value)
     this.inputControl.valueChanges.subscribe(()=>{
-      console.log(this.inputControl.value);
-      // this.outAmount = this.inputControl.value *2;
+      this.Amount.emit(this.inputControl.value);
+
+
     })
 
   }

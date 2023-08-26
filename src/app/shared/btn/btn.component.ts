@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn',
@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BtnComponent {
   @Input() title:string = "";
+  @Output() onClick: EventEmitter<void> = new EventEmitter<void>();
+  @Input() isdisable:boolean = false;
 }

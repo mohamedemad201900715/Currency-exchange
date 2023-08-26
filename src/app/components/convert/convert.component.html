@@ -2,23 +2,23 @@
 <div class="from-currency">
   <div class="amount-input">
     <label for="Amount">Amount</label>
-    <div class ="input"><app-input></app-input></div>
+    <div class ="input"><app-input (Amount)="amount($event)"></app-input></div>
   </div>
   <div class="from">
     <label  for="From">from</label>
-    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response" (selecteddCurrency)="counryselect($event)"></app-selector></div>
+    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response" (selecteddCurrency)="currencyFrom($event)"></app-selector></div>
   </div>
 </div>
 <div class="to-currency">
   <div class="to">
     <label for="To">To</label>
-    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response"></app-selector></div>
+    <div class ="select"><app-selector [flagurl]="flagurl" [response]="response" (selecteddCurrency)="currencyTo($event)"></app-selector></div>
   </div>
   <div class="amount-output">
     <label for="Amount">Amount</label>
-    <div class ="input"><app-input [isdisable]="true"></app-input></div>
+    <div class ="input"><app-input [isdisable]="true" [Result]="Result"></app-input></div>
   </div>
 </div>
 
-<app-btn [title]="btnName"></app-btn>
+<app-btn [title]="btnName" (onClick)="convert(currancyNameFrom, currancyNameTo, Amount)" [isdisable]="btnDisabled"></app-btn>
 

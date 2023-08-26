@@ -1,1 +1,1 @@
-<button>{{title}}</button>
+<button (click)="onClick.emit()" [attr.disabled]="isdisable ? 'disabled' : null">{{title}}</button>

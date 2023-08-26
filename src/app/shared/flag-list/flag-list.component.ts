@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
 
 @Component({
@@ -11,6 +11,10 @@ export class FlagListComponent {
   @Input() response?:conversionRates;
   isListHidden = true;
   isListOpen = false;
+  @Output() checkedCurrenciesChange = new EventEmitter<string[]>();
+  @Output() checkedCurrenciesChangeRate = new EventEmitter<number[]>();
+ @Input() checkedCurrencies: string[] = [];
+ @Input() checkedCurrenciesRate: number[] = [];
 
   toggleList() {
     this.isListHidden = !this.isListHidden;
@@ -21,4 +25,22 @@ export class FlagListComponent {
     this.isListHidden = true;
     this.isListOpen = false;
   }
+  checkboxChanged(event: any, key: string, value: number) {
+    if (event.target.checked) {
+      this.checkedCurrencies.push(key);
+      this.checkedCurrenciesRate.push(value);
+    } else {
+      const index = this.checkedCurrencies.indexOf(key);
+      const index2 = this.checkedCurrenciesRate.indexOf(value);
+
+      if (index !== -1 && index2 !== -1) {
+        this.checkedCurrencies.splice(index, 1);
+        this.checkedCurrenciesRate.splice(index2, 1); // Use index2 here
+      }
+    }
+    this.checkedCurrenciesChange.emit(this.checkedCurrencies);
+    this.checkedCurrenciesChangeRate.emit(this.checkedCurrenciesRate);
+  }
+
+
 }
