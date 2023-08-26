@@ -17,3 +17,12 @@ line-height: normal;
 padding-bottom: 11px;
   padding-left: 12px;
 }
+@media screen and (max-width: 600px) {
+  .input-filed input {
+    width: 121px;
+    height: 48px;
+    
+  }
+
+  
+}

@@ -1,29 +1,28 @@
-nav{
+nav {
   width: 100%;
   height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: sticky;
-
 }
-nav img{
+nav img {
   width: 307px;
   height: 52.489px;
-  margin-left: 15px
+  margin-left: 15px;
 }
-.background{
+.background {
   background-image: url("../assets/glowing-chart-shows-successful-financial-growth-generated-by-ai\ 1.png");
   background-size: cover;
   position: relative;
   height: 100vh;
 }
-.page-1{
+.page-1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.favourite{
+.favourite {
   // width: 100vw;
 }
 
@@ -32,20 +31,64 @@ nav img{
   flex-direction: column;
   height: 520px;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   flex-shrink: 0;
   border-radius: 21.314px;
-  background: linear-gradient(
-    134deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(157, 157, 157, 0.2) 100%
-  );
+  // background: linear-gradient(
+  //   134deg,
+  //   rgba(0, 0, 0, 0.4) 0%,
+  //   rgba(157, 157, 157, 0.2) 100%
+  // );
   backdrop-filter: blur(3px);
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 60px;
   padding-right: 60px;
 }
-.page-2{
-  height: 100vh;
+// .page-2{
+//   height: 100vh;
+// }
+
+@media screen and (max-width: 600px) {
+  .background {
+    width: 100%;
+    // width: 375px;
+
+    height: 239px;
+    fill: linear-gradient(
+      180deg,
+      rgba(214, 14, 14, 0.4) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    // background-size: 239px;
+  }
+  .background nav img {
+    width: 143.439px;
+    height: 32px;
+    margin-left: 15px;
+  }
+  .taps {
+    height: fit-content;
+    // background: none;
+    backdrop-filter: blur(0px);
+    background-color: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 90%;
+    // margin-top: 50px;
+    // margin-bottom: 0px;
+    // padding-bottom: 0px;
+  }
+  .taps toggle-btns {
+    width: 274.926px;
+    height: 46.013px;
+    // padding-top: 50px;
+  }
+  
+  // .page-2{
+  //  width: 100vw;
+  // padding-left: 25px;
+  // padding-right: 25px;  
+  // }
 }

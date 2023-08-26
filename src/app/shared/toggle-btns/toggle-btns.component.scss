@@ -1,9 +1,9 @@
 :host {
-  @apply flex  w-[25rem] h-[68px] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0];
+  @apply flex  w-[25rem]   h-[68px] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0] ;
 }
 
 .toggle-btn {
-  @apply flex w-[280px]  h-[67px]  p-[16px] justify-center items-center gap-[16.113px] rounded-[36.292px] bg-[transparent] transition-all;
+  @apply flex w-[280px]   h-[67px]  p-[16px] justify-center items-center gap-[16.113px] rounded-[36.292px] bg-[transparent] transition-all ; 
 }
 .toggle-btn_active {
   @apply bg-white;

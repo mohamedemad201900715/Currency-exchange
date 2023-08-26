@@ -3,6 +3,4 @@
   <input *ngIf="!isdisable" class="layout"  type="text"  placeholder="Value" [formControl]="inputControl" appPreventNegativeInput />
   <input *ngIf="isdisable" class="layout"  type="text" [disabled]="isdisable" [attr.value]="Result | number:'1.2-2'" />
 </div>
-<!-- <div>{{ inputControl.value }}
-    {{ outAmount }}
-</div> -->
+

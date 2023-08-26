@@ -63,3 +63,15 @@ transition: transform 0.2s ease-in-out;
 .rotate {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 600px) {
+ 
+  .dropdown-button {
+    width: 184px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  .dropdown-arrow {
+    position: relative;
+    right: 0px;
+  }
+}

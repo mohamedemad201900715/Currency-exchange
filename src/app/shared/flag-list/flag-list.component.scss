@@ -1,7 +1,7 @@
 button {
   border: 1px solid rgb(121, 121, 121);
   border-radius: 50px;
-//   padding: 5px;
+  //   padding: 5px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -13,86 +13,91 @@ button {
 button img {
   width: 30px;
   padding: 5px;
-    }
-    .dropdown {
-      position: absolute;
-      right: 100%;
-      top: 100%;
-      border: 1px solid #ccc;
-      padding: 20px 0 20px 20px;
-      background-color: rgb(232,232,232);
-      z-index: 1;
-      width: 350px;
-      border-radius: 1.85075rem;
-    }
+}
+.dropdown {
+  position: absolute;
+  right: 100%;
+  top: 100%;
+  border: 1px solid #ccc;
+  padding: 20px 0 20px 20px;
+  background-color: rgb(232, 232, 232);
+  z-index: 1;
+  width: 350px;
+  border-radius: 1.85075rem;
+}
 
-    .dropdown-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .close-button {
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-    .page-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(13, 13, 13, 1), rgba(217, 217, 217, 0)100%);
-      z-index: 0;
-    }
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 13, 13, 1),
+    rgba(217, 217, 217, 0) 100%
+  );
+  z-index: 0;
+}
 
-    .close-button {
-      border: none;
-      cursor: pointer;
-      font-size: 20px;
-      position: absolute;
-      top: -26px;
-      right: 13px;
-      background-color: rgb(232,232,232);
-      border-radius: 100%;
-      height: 40px;
-      width: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .dropdown-wrapper {
-      position: relative;
-      display: inline-block;
-    }
-h2{
+.close-button {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: -26px;
+  right: 13px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+h2 {
   font-size: 20px;
 }
-.dropdown-content{
+.dropdown-content {
   display: flex;
   flex-direction: column;
   max-height: 400px;
   overflow-y: auto;
 }
-.flex-box{
+.flex-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.flex-column{
-display: flex;
-    flex-direction: column;
-    margin-left: 20px;}
-.flag{
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.flag {
   width: 60px;
   height: 60px;
   border-radius: 100%;
   object-fit: cover;
   overflow: hidden;
 }
-.flex-countaner{
+.flex-countaner {
   display: flex;
 }
 .styled-checkbox {
@@ -103,7 +108,7 @@ display: flex;
   width: 16px;
   height: 16px;
   background-color: white;
-  border: 2px solid #B8B8B8;
+  border: 2px solid #b8b8b8;
   border-radius: 3px;
   display: inline-block;
   position: relative;
@@ -118,10 +123,24 @@ display: flex;
 }
 
 .styled-checkbox:checked::before {
-  content: '✔';
+  content: "✔";
   position: absolute;
   top: -2px;
   left: 1px;
   font-size: 12px;
   color: white;
+}
+@media screen and (max-width: 600px) {
+  button {
+    width: 135px;
+    height: 35.336px;
+    font-family: Poppins;
+    font-size: 10.872px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  button img {
+    width: 17.215px;
+    height: 17.215px;
+  }
 }

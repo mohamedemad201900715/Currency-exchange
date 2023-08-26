@@ -20,7 +20,6 @@ export class InputComponent {
     inputElement.value = newValue;
   }
   constructor() {
-    // console.log(this.inputControl.value)
     this.inputControl.valueChanges.subscribe(()=>{
       this.Amount.emit(this.inputControl.value);
 

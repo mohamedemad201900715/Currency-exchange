@@ -1,8 +1,10 @@
-
-.input{
+* {
+  color: black;
+}
+.input {
   width: 11rem;
 }
-.select{
+.select {
   width: 11rem;
 }
 label {
@@ -10,8 +12,8 @@ label {
   display: block;
   margin-bottom: 15px;
   font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .from-currency {
   display: flex;
@@ -22,5 +24,26 @@ line-height: normal;
   display: flex;
   margin-top: 15px;
   margin-bottom: 40px;
-  justify-content: space-around;;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  * {
+    color: black;
+  }
+  .input {
+    width: 152px;
+    height: 48px;
+  }
+  .select {
+    width: 90px;
+    height: 48px;
+  }
+  .to-currency {
+    margin: 0px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+  }
+  .from-currency {
+    margin: 0px;
+  }
 }
