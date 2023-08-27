@@ -15,6 +15,7 @@ import { BtnComponent } from './shared/btn/btn.component';
 import { InputComponent } from './shared/input/input.component';
 import { FavouriteComponent } from './components/favourite/favourite.component';
 import { FlagListComponent } from './shared/flag-list/flag-list.component';
+import { SpinnerLoadingComponent } from './shared/spinner-loading/spinner-loading.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FlagListComponent } from './shared/flag-list/flag-list.component';
     InputComponent,
     FavouriteComponent,
     FlagListComponent,
+    SpinnerLoadingComponent,
   ],
   imports: [
     BrowserModule,

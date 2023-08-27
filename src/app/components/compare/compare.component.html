@@ -1,4 +1,8 @@
-
+<div *ngIf="loading" class="loading-container">
+  <div class="spinner-overlay">
+    <app-spinner-loading></app-spinner-loading>
+  </div>
+</div>
 <div class="compare">
   <div class="from-currency">
     <div class="amount-input">
@@ -19,7 +23,7 @@
       <label for="Amount">Targeted currancy</label>
       <div class ="select"><app-selector [flagurl]="flagurl" [response]="response" (selecteddCurrency)="currencyTo2($event)"></app-selector></div>
     </div>
-  
+
     <!-- input -->
   </div>
   <div class="to-currency">
@@ -29,7 +33,7 @@
     <div class="amount-output">
       <div class ="input"><app-input [isdisable]="true" [Result]="Result2"></app-input></div>
     </div>
-  
+
     <!-- input -->
   </div>
 </div>

@@ -1,4 +1,12 @@
 <div class="background">
+
+    <div *ngIf="loading" class="loading-container">
+      <div class="spinner-overlay">
+        <app-spinner-loading></app-spinner-loading>
+      </div>
+    </div>
+  <div *ngIf="!loading">
+
   <nav><img src="../assets/final 1.png" alt="" /></nav>
   <div class="page-1">
     <div class="taps">
@@ -21,7 +29,8 @@
     </div>
   </div>
 </div>
-<div class="page-2">
+</div>
+<div class="page-2" *ngIf="!loading">
   <app-favourite [flagurl]="flagurl" [response]="response"></app-favourite>
 </div>
-<!-- <app-flag-list></app-flag-list> -->
+

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { conversionRates } from 'src/app/Interfaces/exchange-rate.interface';
 import { ApiDataService } from '../../Services/api-data.service';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-compare',
@@ -18,6 +19,7 @@ currancyNameTo1:string="";
 currancyNameTo2:string="";
 Result1?:number;
 Result2?:number;
+loading:boolean= false;
 constructor(private service: ApiDataService){}
 
 
@@ -43,14 +45,28 @@ currencyTo2(currancy:string){
     this.updateButtonState();
   }
 convert(from:string , to1:string ,to2:string ,amount:number){
-  this.service.getConvert(from , to1 , amount).subscribe((response) => {
-    this.Result1 = response;
-    console.log(this.Result1);
-  });
-  this.service.getConvert(from , to2 , amount).subscribe((response) => {
-    this.Result2 = response;
-    console.log(this.Result2);
-  });
+  this.loading=true
+  // this.service.getConvert(from , to1 , amount).subscribe((response) => {
+  //   this.Result1 = response;
+  // });
+  // this.service.getConvert(from , to2 , amount).subscribe((response) => {
+  //   this.Result2 = response;
+  //   this.loading=false;
+
+  // });
+  const call_1 = this.service.getConvert(from, to1, amount);
+const call_2 = this.service.getConvert(from, to2, amount);
+  forkJoin([call_1, call_2]).subscribe(
+    ([response1, response2]) => {
+      this.Result1 = response1;
+      this.Result2 = response2;
+      this.loading = false;
+    },
+    (error) => {
+      // Handle error if needed
+      console.error('An error occurred:', error);
+      this.loading = false;
+    });
 }
 
 }

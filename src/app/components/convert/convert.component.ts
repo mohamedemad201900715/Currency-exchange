@@ -16,6 +16,7 @@ export class ConvertComponent {
   currancyNameTo:string="";
   btnName:string ="convert"
   Result?:number;
+  loading:boolean= false;
 constructor(private service: ApiDataService){}
 updateButtonState() {
   this.btnDisabled = !this.currancyNameFrom || !this.currancyNameTo || this.Amount == 0;
@@ -39,9 +40,11 @@ currencyTo(currancy:string){
     this.updateButtonState();
   }
 convert(from:string , to:string ,amount:number){
+  this.loading=true
   this.service.getConvert(from , to , amount).subscribe((response) => {
     this.Result = response;
-    console.log(this.Result);
+    console.log(this.Result)
+    this.loading=false;
   });
 }
 }
