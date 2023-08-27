@@ -1,5 +1,4 @@
 * {
-  //   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: rgb(232, 232, 232);
@@ -76,7 +75,6 @@ h3 {
 @media screen and (max-width: 640px) {
  *{
   background-color: rgba(255, 105, 180, 0);
-// margin-top: 100px;
 }
 h2 {
   font-family: Poppins;

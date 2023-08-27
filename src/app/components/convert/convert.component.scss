@@ -27,19 +27,20 @@ label {
 @media screen and (max-width: 640px) {
   .convert {
     width: 100vw;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+
+>>>>>>> 92089d8729b056ea3297645096b247d1463e11ec
   }
   label {
     color: black;
     display: block;
     font-size: 14px;
-    // margin-bottom: 15px;
     font-weight: 600;
-    // margin: 0px;
-    // line-height: normal;
+
   }
   .from-currency {
-    // margin: 0px;
     padding-left: 70px;
     padding-right: 30px;
     margin-top: 30px;
@@ -47,15 +48,18 @@ label {
   }
 
   .to-currency {
-    // margin: 0px;
     padding-left: 70px;
     padding-right: 30px;
     margin-top: 40px;
     gap: 10px;
   }
   app-btn {
+<<<<<<< HEAD
     // padding-left: 30px;
     // padding-right: 30px;
+=======
+
+>>>>>>> 92089d8729b056ea3297645096b247d1463e11ec
     display: flex;
     justify-content: center;
   }

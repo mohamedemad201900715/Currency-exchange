@@ -5,7 +5,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  // position: sticky;
 }
 nav img {
   width: 307px;
@@ -49,7 +48,6 @@ nav img {
  
   .background {
     width: 100%;
-    // width: 375px;
 
     height: 239px;
     fill: linear-gradient(
@@ -57,7 +55,6 @@ nav img {
       rgba(214, 14, 14, 0.4) 0%,
       rgba(217, 217, 217, 0) 100%
     );
-    // background-size: 239px;
   }
   .background nav img {
     width: 143.439px;
@@ -66,22 +63,19 @@ nav img {
   }
   .taps {
     height: fit-content;
-    // background: none;
     backdrop-filter: blur(0px);
     background-color: none;
     margin: 0px;
     padding: 0px;
     position: absolute;
     top: 90%;
-    // margin-top: 50px;
-    // margin-bottom: 0px;
-    // padding-bottom: 0px;
+
   }
   .taps toggle-btns {
     width: 274.926px;
     height: 46.013px;
-    // padding-top: 50px;
   }
+<<<<<<< HEAD
 
   // .page-2{
   //  width: 100vw;
@@ -89,4 +83,6 @@ nav img {
   // padding-right: 25px;
   // }
  
+=======
+>>>>>>> 92089d8729b056ea3297645096b247d1463e11ec
 }
