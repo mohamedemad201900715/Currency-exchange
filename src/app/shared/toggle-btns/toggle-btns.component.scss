@@ -8,3 +8,8 @@
 .toggle-btn_active {
   @apply bg-white;
 }
+@media (max-width: 640px){
+  .toggle-btn {
+  @apply h-[180%];
+  }
+}

@@ -4,7 +4,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: sticky;
+  // position: sticky;
 }
 nav img {
   width: 307px;
@@ -24,9 +24,7 @@ nav img {
   justify-content: center;
   align-items: center;
 }
-.favourite {
-  // width: 100vw;
-}
+
 
 .taps {
   display: flex;
@@ -36,22 +34,17 @@ nav img {
   align-items: center;
   flex-shrink: 0;
   border-radius: 21.314px;
-  // background: linear-gradient(
-  //   134deg,
-  //   rgba(0, 0, 0, 0.4) 0%,
-  //   rgba(157, 157, 157, 0.2) 100%
-  // );
   backdrop-filter: blur(3px);
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 60px;
   padding-right: 60px;
 }
-// .page-2{
-//   height: 100vh;
-// }
+.page-2{
+  height: 100vh;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .background {
     width: 100%;
     // width: 375px;

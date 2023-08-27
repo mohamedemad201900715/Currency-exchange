@@ -28,22 +28,23 @@ label {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   * {
     color: black;
   }
   .compare{
     width: 100vw;
     padding-left: 10px;
-    
+
 
   }
   .input {
     width: 152px;
     height: 48px;
-    
+    margin-right: 22px;
+
   }
- 
+
   .to-currency {
     margin: 0px;
     padding: 0px;

@@ -64,7 +64,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .dropdown-button {
     width: 152px;
     height: 48px;
@@ -79,4 +79,5 @@
     position: relative;
     right: 0px;
   }
+
 }

@@ -73,7 +73,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
  *{
   background-color: rgba(255, 105, 180, 0);
 // margin-top: 100px;
@@ -95,11 +95,13 @@ h3 {
   top: 90%;
   left: 0px;
   padding: 0px;
-  // padding-top: 80px;
-  // min-height: 100%;
-  // height: fit-content;
   padding-left: 30px;
   padding-right: 30px;
 }
-  
+.miniconts {
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+#minicont{
+  width: 100%;
+}
 }
