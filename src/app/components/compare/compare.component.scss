@@ -34,7 +34,10 @@ label {
   }
   .compare{
     width: 100vw;
-    padding-left: 10px;
+    // padding-left: 10px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     // overflow-x: hidden;
 
 
@@ -51,8 +54,9 @@ label {
     margin: 0px;
     padding: 0px;
     margin-bottom: 18px;
-    padding-left: 60px;
-    justify-content: flex-start;
+    // padding-left: 60px;
+    gap: 3%;
+        justify-content: flex-start;
 
 
   }
@@ -61,8 +65,9 @@ label {
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 0px;
-    padding-left: 60px;
-    justify-content: flex-start;
+    // padding-left: 60px;
+    gap: 3%;
+       justify-content: flex-start;
 
   }
   label{
@@ -75,13 +80,13 @@ label {
     justify-content: center;
     margin-bottom: 15px;
   }
-  .to{
-margin-right: 22px;
-  }
-  .amount-input{
-    margin-right: 22px;
+//   .to{
+// margin-right: 22px;
+//   }
+//   .amount-input{
+//     margin-right: 22px;
 
-  }
+//   }
   // .amount-output{
   //   width: 45%;
   // }
