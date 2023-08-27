@@ -41,11 +41,12 @@ nav img {
   padding-right: 60px;
 }
 .page-2{
-  height: 100vh;
+  height: fit-content;
+
 }
 
 @media screen and (max-width: 640px) {
- 
+
   .background {
     width: 100%;
 
@@ -81,5 +82,5 @@ nav img {
   // padding-left: 25px;
   // padding-right: 25px;
   // }
- 
+
 }
