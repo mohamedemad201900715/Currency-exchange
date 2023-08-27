@@ -38,6 +38,7 @@ nav img {
   border: 1px solid rgba(255, 255, 255, 0.358);
   background: linear-gradient(134deg, rgba(0, 0, 0, 0.40) 0%, rgba(157, 157, 157, 0.20) 100%);
   backdrop-filter: blur(4.504402160644531px);
+  z-index: 100;
 }
 .page-2{
   height: fit-content;
