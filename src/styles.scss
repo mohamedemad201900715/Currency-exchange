@@ -5,6 +5,7 @@
 
 *{
   font-family: Open Sans;
+  
 }
 .loading-container {
   position: absolute;
@@ -37,4 +38,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+@media screen and (max-width: 640px) {
+  
 }
