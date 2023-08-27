@@ -35,7 +35,7 @@ export class FlagListComponent {
 
       if (index !== -1 && index2 !== -1) {
         this.checkedCurrencies.splice(index, 1);
-        this.checkedCurrenciesRate.splice(index2, 1); // Use index2 here
+        this.checkedCurrenciesRate.splice(index2, 1);
       }
     }
     this.checkedCurrenciesChange.emit(this.checkedCurrencies);

@@ -46,14 +46,6 @@ currencyTo2(currancy:string){
   }
 convert(from:string , to1:string ,to2:string ,amount:number){
   this.loading=true
-  // this.service.getConvert(from , to1 , amount).subscribe((response) => {
-  //   this.Result1 = response;
-  // });
-  // this.service.getConvert(from , to2 , amount).subscribe((response) => {
-  //   this.Result2 = response;
-  //   this.loading=false;
-
-  // });
   const call_1 = this.service.getConvert(from, to1, amount);
 const call_2 = this.service.getConvert(from, to2, amount);
   forkJoin([call_1, call_2]).subscribe(
@@ -63,7 +55,6 @@ const call_2 = this.service.getConvert(from, to2, amount);
       this.loading = false;
     },
     (error) => {
-      // Handle error if needed
       console.error('An error occurred:', error);
       this.loading = false;
     });
