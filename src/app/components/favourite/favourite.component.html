@@ -10,11 +10,13 @@
       </h3>
       <div class="miniconts">
       <div id="minicont" *ngFor="let currancy of checkedCurrencies; let index = index">
+        <div class="flex flex-row">
         <div class="flag"><img [src]= "flagurl + currancy.toLowerCase() + '.png'" alt=".." /></div>
         <div class="flex-colum">
           <div class="currancy">{{currancy}}</div>
           <div class="name-currancy">Currency</div>
         </div>
+      </div>
         <div class="num">{{checkedCurrenciesRates[index] | number:'1.2-2'}}</div>
       </div>
 

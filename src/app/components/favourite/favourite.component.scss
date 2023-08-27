@@ -43,7 +43,7 @@ h3 {
 #minicont {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   margin-left: 1%;
   margin-top: 5%;
   padding-bottom: 25px;
@@ -51,7 +51,10 @@ h3 {
   width: 80%;
 }
 .miniconts .flag img {
-  width: 100%;
+  width: 60px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    max-width: none;
 }
 
 .flex-colum {
@@ -61,7 +64,7 @@ h3 {
   font-size: 20px;
 }
 .num {
-  margin-left: 42%;
+  // margin-left: 42%;
   font-size: 27px;
   font-weight: 500;
 
@@ -101,6 +104,5 @@ h3 {
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
 #minicont{
-  width: 100%;
-}
+  width: 100%;}
 }
