@@ -4,7 +4,9 @@
     class="flag-image"
     alt="Flag" />
     {{ selectedCurrency ? selectedCurrency : 'Select Currency' }}
-    <span class="dropdown-arrow" [ngClass]="{ 'rotate': isDropdownOpen }">&#9662;</span>
+    <span class="dropdown-arrow" [ngClass]="{ 'rotate': isDropdownOpen }"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+      <path d="M23.1382 9.48474L14.5997 18.0232L6.06128 9.48474" stroke="#202020" stroke-width="2.56154" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg></span>
   </button>
 
   <ul class="dropdown-list" *ngIf="isDropdownOpen">

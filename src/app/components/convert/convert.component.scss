@@ -9,20 +9,27 @@ label {
   display: block;
   margin-bottom: 15px;
   font-style: normal;
-  font-weight: 400;
+  // font-weight: 400;
   line-height: normal;
 }
 .from-currency {
   display: flex;
   margin-top: 15px;
-  justify-content: space-around;
+  // justify-content: space-around;
+  gap: 10px;
+  padding-left: 14px;
+}
+.from-currency .input{
+  // margin: 0 9px 0 0;
 }
 
 .to-currency {
   display: flex;
   margin-top: 15px;
   margin-bottom: 40px;
-  justify-content: space-around;
+  // justify-content: space-around;
+  gap: 10px;
+  padding-left: 14px;
 }
 @media screen and (max-width: 640px) {
   .convert {
@@ -33,19 +40,19 @@ label {
   label {
     color: black;
     display: block;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 17px;
+    // font-weight: 600;
 
   }
   .from-currency {
-    padding-left: 70px;
+    padding-left: 52px;
     padding-right: 30px;
     margin-top: 30px;
     gap: 10px;
   }
 
   .to-currency {
-    padding-left: 70px;
+    padding-left: 52px;
     padding-right: 30px;
     margin-top: 40px;
     gap: 10px;

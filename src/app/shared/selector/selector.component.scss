@@ -1,3 +1,4 @@
+
 :host {
   font-style: normal;
   font-weight: 400;
@@ -63,7 +64,9 @@
 .rotate {
   transform: rotate(180deg);
 }
-
+svg{
+  width: 1.2rem;
+}
 @media screen and (max-width: 640px) {
   .dropdown-button {
     width: 152px;
@@ -89,7 +92,7 @@
     max-height: 200px;
     overflow-x:hidden
   }
-  
+
   .dropdown-list li {
     z-index: 100 !important;
     padding: 8px 3px;

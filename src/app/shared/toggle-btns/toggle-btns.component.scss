@@ -1,15 +1,20 @@
 :host {
-  @apply flex  w-[25rem]   h-[68px] sm:w-[2] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0] ;
+  @apply flex  w-[24rem]   h-[68px] sm:w-[2] p-[10px] justify-center items-center gap-[80px] rounded-[30px] bg-[#F0F0F0] ;
 }
 
 .toggle-btn {
+  font-family: Poppins;
   @apply flex w-[280px]   h-[67px]  p-[16px] justify-center items-center gap-[16.113px] rounded-[36.292px] bg-[transparent] transition-all ;
 }
 .toggle-btn_active {
-  @apply bg-white;
+  @apply bg-[#FFF] bg-opacity-[0.6];
 }
 @media (max-width: 640px){
   .toggle-btn {
-  @apply h-[180%];
+  @apply h-[180%] ;
+
   }
+  :host{
+  @apply bg-[#F8F8F8];
+}
 }

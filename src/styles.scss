@@ -1,11 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
 
 *{
   font-family: Open Sans;
-  
 }
 .loading-container {
   position: absolute;
@@ -39,6 +38,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+label{
+  font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+}
 @media screen and (max-width: 640px) {
-  
+
 }
