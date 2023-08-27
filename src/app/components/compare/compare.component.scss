@@ -35,7 +35,7 @@ label {
   .compare{
     width: 100vw;
     padding-left: 10px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
 
 
@@ -43,7 +43,7 @@ label {
   .input {
     width: 152px;
     height: 48px;
-    margin-right: 22px;
+    // margin-right: 22px;
 
   }
 
@@ -51,7 +51,8 @@ label {
     margin: 0px;
     padding: 0px;
     margin-bottom: 18px;
-    padding-left: 30px;
+    padding-left: 60px;
+    justify-content: flex-start;
 
 
   }
@@ -60,7 +61,9 @@ label {
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 0px;
-    padding-left: 30px;
+    padding-left: 60px;
+    justify-content: flex-start;
+
   }
   label{
     color: black;
@@ -72,6 +75,13 @@ label {
     justify-content: center;
     margin-bottom: 15px;
   }
+  .to{
+margin-right: 22px;
+  }
+  .amount-input{
+    margin-right: 22px;
+
+  }
   // .amount-output{
   //   width: 45%;
   // }
@@ -80,5 +90,7 @@ label {
   //   padding: 0px;
   // }
   .select{
-margin-left: 0px;  }
+margin-left: 0px;
+width: auto;
+ }
 }
