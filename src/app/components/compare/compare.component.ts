@@ -50,8 +50,8 @@ convert(from:string , to1:string ,to2:string ,amount:number){
 const call_2 = this.service.getConvert(from, to2, amount);
   forkJoin([call_1, call_2]).subscribe(
     ([response1, response2]) => {
-      this.Result1 = response1;
-      this.Result2 = response2;
+      this.Result1 =   response1["conversion_value"];
+      this.Result2 = response2["conversion_value"];
       this.loading = false;
     },
     (error) => {

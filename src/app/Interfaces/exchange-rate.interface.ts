@@ -6,3 +6,6 @@ export interface ExchangeRateResponse {
 export interface conversionRates{
     [currencyCode: string]: number;
 }
+export interface conversionValue{
+  [currencyCode: string]: number;
+}
