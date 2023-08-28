@@ -17,4 +17,4 @@ Welcome to the Currency Conversion Exchange Website project! This web applicatio
 - Tailwind CSS
 
 ## screenshoots
-<img src="./src/assets/What.jpeg" alt="conver page" width="50%">
+<img src="./src/assets/What.jpeg" alt="conver page" width="50%" height="50%">
