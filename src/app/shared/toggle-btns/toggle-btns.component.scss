@@ -10,8 +10,11 @@
   @apply bg-[#FFF] bg-opacity-[0.6];
 }
 @media (max-width: 640px){
+  :host{
+    @apply w-[20rem]
+  }
   .toggle-btn {
-  @apply h-[180%] ;
+  @apply h-[140%] ;
 
   }
   :host{
