@@ -25,3 +25,9 @@ Welcome to the Currency Conversion Exchange Website project! This web applicatio
 
 ## favouraate 
 <img src="./src/assets/fav.jpeg" alt="conver page" width="50%" height="50%">
+
+##responsive design
+- we worked on the design making it responsive that can fit all devices
+
+<img src="./src/assets/mobile-c.jpeg" alt="conver page" width="50%" height="50%">  <img src="./src/assets/mobile-fav.jpeg" alt="conver page" width="50%" height="50%">
+
