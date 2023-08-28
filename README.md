@@ -6,6 +6,7 @@ Welcome to the Currency Conversion Exchange Website project! This web applicatio
 
 - **Currency Conversion:** Users can convert currencies from one type to another using real-time exchange rates.
 - **Currency Comparison:** Users can compare the values of two equivalent currencies.
+- **users can select their favourire currencies, add them to thier protoflio and they are updated continously.
 - **Responsive Design:** The website is designed to work seamlessly on various devices, from desktop to mobile.
 
 ## Technologies Used
@@ -16,4 +17,4 @@ Welcome to the Currency Conversion Exchange Website project! This web applicatio
 - Tailwind CSS
 
 ## screenshoots
-<img src="../assets/What.jpeg" alt="conver page"/>
+<img src="./src/assets/What.jpeg" alt="conver page"/>
