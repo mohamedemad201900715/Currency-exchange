@@ -1,12 +1,15 @@
 * {
   color: black;
 }
+
 .input {
   width: 11rem;
 }
+
 .select {
   width: 11rem;
 }
+
 label {
   color: white;
   display: block;
@@ -15,11 +18,13 @@ label {
   // font-weight: 400;
   line-height: normal;
 }
+
 .from-currency {
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
 }
+
 .to-currency {
   display: flex;
   margin-top: 15px;
@@ -27,27 +32,24 @@ label {
   justify-content: space-around;
 }
 
-
 @media screen and (max-width: 640px) {
   * {
     color: black;
   }
-  .compare{
+
+  .compare {
     width: 100vw;
     // padding-left: 10px;
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     // overflow-x: hidden;
-
-
-
   }
+
   .input {
     width: 152px;
     height: 48px;
     // margin-right: 22px;
-
   }
 
   .to-currency {
@@ -56,10 +58,9 @@ label {
     margin-bottom: 18px;
     // padding-left: 60px;
     gap: 3%;
-        justify-content: flex-start;
-
-
+    justify-content: flex-start;
   }
+
   .from-currency {
     margin: 0px;
     margin-top: 8px;
@@ -67,26 +68,27 @@ label {
     padding: 0px;
     // padding-left: 60px;
     gap: 3%;
-       justify-content: flex-start;
-
+    justify-content: flex-start;
   }
-  label{
+
+  label {
     color: black;
     // font-weight: 600;
     font-size: 14px;
   }
-  app-btn{
+
+  app-btn {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
   }
-//   .to{
-// margin-right: 22px;
-//   }
-//   .amount-input{
-//     margin-right: 22px;
 
-//   }
+  //   .to{
+  // margin-right: 22px;
+  //   }
+  //   .amount-input{
+  //     margin-right: 22px;
+  //   }
   // .amount-output{
   //   width: 45%;
   // }
@@ -94,8 +96,8 @@ label {
   //   width: 50%;
   //   padding: 0px;
   // }
-  .select{
-margin-left: 0px;
-width: auto;
- }
+  .select {
+    margin-left: 0px;
+    width: auto;
+  }
 }
