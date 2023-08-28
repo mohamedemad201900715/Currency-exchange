@@ -9,8 +9,3 @@ export const ToggleStaticsData: ToggleDataModel[] = [
     status: 'compare',
   },
 ];
-
-export const ToggleStaticsData1 = [
-  ...ToggleStaticsData,
-  { title: 'test', status: 'test' },
-];

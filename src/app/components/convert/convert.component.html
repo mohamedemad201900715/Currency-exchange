@@ -9,9 +9,9 @@
       <label for="Amount">Amount</label>
       <div class="input"><app-input (Amount)="amount($event)"></app-input></div>
     </div>
-    <div class="from">
+    <div class="form-from-currency">
       <label for="From">From</label>
-      <div class="select">
+      <div class="select-currency">
         <app-selector
           [flagurl]="flagurl"
           [response]="response"
@@ -21,9 +21,9 @@
     </div>
   </div>
   <div class="to-currency">
-    <div class="to">
+    <div class="form-to-currency">
       <label for="To">To</label>
-      <div class="select">
+      <div class="select-currency">
         <app-selector
           [flagurl]="flagurl"
           [response]="response"
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="amount-output">
-      <label for="Amount2">Amount</label>
+      <label for="Amount-output">Amount</label>
       <div class="input">
         <app-input [isdisable]="true" [Result]="Result"></app-input>
       </div>

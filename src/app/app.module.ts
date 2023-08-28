@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SelectorComponent } from './shared/selector/selector.component';
 import { ConvertComponent } from './components/convert/convert.component';
 import { CompareComponent } from './components/compare/compare.component';
-import { TreeSelectModule } from 'primeng/treeselect';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToggleBtnsComponent } from './shared/toggle-btns/toggle-btns.component';
@@ -35,7 +34,6 @@ import { SpinnerLoadingComponent } from './shared/spinner-loading/spinner-loadin
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
-    TreeSelectModule,
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,

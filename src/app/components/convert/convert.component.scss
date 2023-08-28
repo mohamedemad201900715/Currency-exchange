@@ -2,7 +2,7 @@
   width: 9rem;
 }
 
-.select {
+.select-currency {
   width: 13rem;
 }
 
@@ -11,39 +11,28 @@ label {
   display: block;
   margin-bottom: 15px;
   font-style: normal;
-  // font-weight: 400;
   line-height: normal;
 }
 
 .from-currency {
   display: flex;
   margin-top: 15px;
-  // justify-content: space-around;
   gap: 10px;
   padding-left: 14px;
-
-  .input {
-    // margin: 0 9px 0 0;
-  }
 }
 
 .to-currency {
   display: flex;
   margin-top: 15px;
   margin-bottom: 40px;
-  // justify-content: space-around;
   gap: 10px;
   padding-left: 14px;
 
-  .select {
-    // margin: 0 9px 0 0;
-  }
+
 }
 
 @media screen and (max-width: 640px) {
   .convert {
-    // width: 100vw;
-    // overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,27 +41,20 @@ label {
       color: black;
       display: block;
       font-size: 17px;
-      // font-weight: 600;
     }
   }
 
   .from-currency {
-    // padding-left: 25px;
-    // padding-right: 30px;
     margin-top: 30px;
     gap: 3%;
   }
 
   .to-currency {
-    // padding-left: 25px;
-    // padding-right: 30px;
     margin-top: 40px;
     gap: 3%;
   }
 
   app-btn {
-    // padding-left: 30px;
-    // padding-right: 30px;
     display: flex;
     justify-content: center;
   }
@@ -83,31 +65,25 @@ label {
 
   .from-currency .input {
     width: 115px;
-    // margin-left: 24px;
+
   }
 
-  .to-currency .select {
+  .to-currency .select-currency {
     width: auto;
-    // margin-left: 24px;
   }
 
   .to-currency .input {
     width: 115px;
-    // margin-right: 57px;
   }
 
-  // label[for="Amount"],
-  // label[for="To"] {
-  //   margin-left: 24px;
-  // }
+
 
   .amount-output {
-    // position: relative;
     width: 50%;
     padding: 0px;
   }
 
-  .select {
+  .select-currency {
     width: auto;
   }
 }
