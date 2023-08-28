@@ -2,8 +2,8 @@
 
 Welcome to the Currency Conversion Exchange Website project! This web application allows users to convert currencies from one to another and also compare the values of equivalent currencies. The project is built using Angular, TypeScript, Sass, and Tailwind CSS.
 
-## our web page :
-[visit currency conversion web page](https://currency-exchange-uy3o.vercel.app/)
+## Visit our currency conversion web page :
+[https://currency-exchange.app](https://currency-exchange-uy3o.vercel.app/)
 
 ## Features
 
