@@ -4,43 +4,29 @@
   background-color: rgb(232, 232, 232);
   font-family: Poppins;
 }
-h2 {
-  font-size: 200%;
-  font-weight: 600;
-}
-h3 {
-  font-size: 150%;
-  font-family: Poppins;
-  color: rgb(0, 0, 0);
-  font-weight: 400;
 
-}
-.name-currancy {
-  color: rgb(140, 136, 136);
-  font-weight: 300;
-}
-.currancy {
-  color: black;
-}
-.main-container {
+.fav-container {
   padding-top: 40px;
   min-height: 100%;
   height: fit-content;
   padding-left: 150px;
   padding-right: 150px;
 }
-.head {
+.header {
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
 }
-
-.artical {
+.header h2 {
+  font-size: 200%;
+  font-weight: 600;
+}
+.portofolio {
   display: flex;
   margin-top: 4.5%;
   position: relative;
 }
-#minicont {
+#portofolio-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,11 +36,18 @@ h3 {
   border-bottom: 1px solid rgba(183, 179, 179, 0.505);
   width: 80%;
 }
-.miniconts .flag img {
+.portofolio-content .flag img {
   width: 60px; /* Adjust the width as needed */
-    height: auto;
-    margin-right: 10px;
-    max-width: none;
+  height: auto;
+  margin-right: 10px;
+  max-width: none;
+}
+.currancy-name {
+  color: rgb(140, 136, 136);
+  font-weight: 300;
+}
+.currancy {
+  color: black;
 }
 
 .flex-colum {
@@ -63,48 +56,52 @@ h3 {
   margin-left: 8%;
   font-size: 20px;
 }
-.num {
+.value {
   // margin-left: 42%;
   font-size: 27px;
   font-weight: 500;
-
 }
 .left {
   width: 100%;
 }
-.miniconts {
+.left h3 {
+  font-size: 150%;
+  font-family: Poppins;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+.portofolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 @media screen and (max-width: 640px) {
- *{
-  background-color: #FFF;
-}
-h2 {
-  font-family: Poppins;
-  font-size: 16.84px;
-  font-style: normal;
-  font-weight: 600;
-}
-h3 {
-  font-size: 150%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(0, 0, 0);
-}
-.main-container {
-  width: 100vw;
-  position: absolute;
-  top: 90%;
-  left: 0px;
-  padding: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.miniconts {
-  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-}
-#minicont{
-  width: 100%;
-}
-
+  * {
+    background-color: #fff;
+  }
+  .fav-container {
+    width: 100vw;
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header h2 {
+    font-family: Poppins;
+    font-size: 16.84px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .portofolio-content {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  #portofolio-content {
+    width: 100%;
+  }
+  .left h3 {
+    font-size: 150%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+  }
 }

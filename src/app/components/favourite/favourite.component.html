@@ -1,23 +1,23 @@
-<div class="main-container">
-  <div class="head">
+<div class="fav-container">
+  <div class="header">
     <h2>Live exchange rates</h2>
     <app-flag-list [response]="response" [flagurl]="flagurl" [checkedCurrencies]="checkedCurrencies" [checkedCurrenciesRate]="checkedCurrenciesRates" (checkedCurrenciesChange)="handleCheckedCurrencies($event)"  (checkedCurrenciesChangeRate)="handleCurrenciesRateChange($event)"></app-flag-list>
   </div>
-  <div class="artical">
+  <div class="portofolio">
     <div class="left">
       <h3>
         My Portofolio
       </h3>
-      <div class="miniconts">
-      <div id="minicont" *ngFor="let currancy of checkedCurrencies; let index = index">
+      <div class="portofolio-content">
+      <div id="portofolio-content" *ngFor="let currancy of checkedCurrencies; let index = index">
         <div class="flex flex-row">
         <div class="flag"><img [src]= "flagurl + currancy.toLowerCase() + '.png'" alt=".." /></div>
         <div class="flex-colum">
           <div class="currancy">{{currancy}}</div>
-          <div class="name-currancy">Currency</div>
+          <div class="currancy-name">Currency</div>
         </div>
       </div>
-        <div class="num">{{checkedCurrenciesRates[index] | number:'1.2-2'}}</div>
+        <div class="value">{{checkedCurrenciesRates[index] | number:'1.2-2'}}</div>
       </div>
 
     </div>
