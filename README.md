@@ -16,5 +16,12 @@ Welcome to the Currency Conversion Exchange Website project! This web applicatio
 - Sass
 - Tailwind CSS
 
-## screenshoots
-<img src="./src/assets/What.jpeg" alt="conver page" width="50%" height="50%">
+# screenshoots
+## Currency Conversion
+<img src="./src/assets/convert.jpeg" alt="conver page" width="50%" height="50%">
+
+## currency Comparison
+<img src="./src/assets/compare.jpeg" alt="conver page" width="50%" height="50%">
+
+## favouraate 
+<img src="./src/assets/fav.jpeg" alt="conver page" width="50%" height="50%">
