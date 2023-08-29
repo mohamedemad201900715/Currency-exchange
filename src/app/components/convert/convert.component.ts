@@ -42,7 +42,7 @@ currencyTo(currancy:string){
 convert(from:string , to:string ,amount:number){
   this.loading=true
   this.service.getConvert(from , to , amount).subscribe((response) => {
-    this.Result = response["conversion_value"];
+    this.Result = response["conversion_result"];
     console.log(this.Result)
     this.loading=false;
   });
